@@ -1,0 +1,1437 @@
+[
+ {
+   "Bike Rack ID": "0249-1",
+   "Latitude": 37.270897,
+   "Longitude": -80.434299,
+   "Covered?": "No",
+   "Capacity": 18
+ },
+ {
+   "Bike Rack ID": "0250C-1",
+   "Latitude": 37.230028,
+   "Longitude": -80.429916,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0250B-1",
+   "Latitude": 37.230304,
+   "Longitude": -80.429209,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0250B-2",
+   "Latitude": 37.229885,
+   "Longitude": -80.428775,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0250B-3",
+   "Latitude": 37.229304,
+   "Longitude": -80.428952,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0137-7",
+   "Latitude": 37.231583,
+   "Longitude": -80.427775,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0137-8",
+   "Latitude": 37.231606,
+   "Longitude": -80.427744,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0137-6",
+   "Latitude": 37.231098,
+   "Longitude": -80.427607,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0137-5",
+   "Latitude": 37.231233,
+   "Longitude": -80.427446,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0137-1",
+   "Latitude": 37.231917,
+   "Longitude": -80.427237,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0137-2",
+   "Latitude": 37.231894,
+   "Longitude": -80.427213,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0137-3",
+   "Latitude": 37.231753,
+   "Longitude": -80.427052,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0137-4",
+   "Latitude": 37.231736,
+   "Longitude": -80.427026,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-8",
+   "Latitude": 37.2317728,
+   "Longitude": -80.4258293,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-7",
+   "Latitude": 37.2317925,
+   "Longitude": -80.4258015,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-6",
+   "Latitude": 37.231815,
+   "Longitude": -80.4257703,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-5",
+   "Latitude": 37.231832,
+   "Longitude": -80.4257475,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-3",
+   "Latitude": 37.2319914,
+   "Longitude": -80.4255808,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-10",
+   "Latitude": 37.2320124,
+   "Longitude": -80.4255501,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-12",
+   "Latitude": 37.2320356,
+   "Longitude": -80.4255216,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-11",
+   "Latitude": 37.2319729,
+   "Longitude": -80.4255575,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-4",
+   "Latitude": 37.2319958,
+   "Longitude": -80.4255233,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-9",
+   "Latitude": 37.232018,
+   "Longitude": -80.4254992,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-13",
+   "Latitude": 37.231949,
+   "Longitude": -80.4255191,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0136-1",
+   "Latitude": 37.232567,
+   "Longitude": -80.425933,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0136-2",
+   "Latitude": 37.2327,
+   "Longitude": -80.425438,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0159-2",
+   "Latitude": 37.2298406,
+   "Longitude": -80.4266912,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0159-9",
+   "Latitude": 37.2297931,
+   "Longitude": -80.4266402,
+   "Covered?": "No",
+   "Capacity": 36
+ },
+ {
+   "Bike Rack ID": "0159-10",
+   "Latitude": 37.2297349,
+   "Longitude": -80.4265772,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0159-1",
+   "Latitude": 37.229043,
+   "Longitude": -80.42719,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0159-2",
+   "Latitude": 37.229035,
+   "Longitude": -80.42712,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0159-3",
+   "Latitude": 37.229011,
+   "Longitude": -80.42708,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0170-5",
+   "Latitude": 37.23314,
+   "Longitude": -80.423806,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0170-4",
+   "Latitude": 37.2328149,
+   "Longitude": -80.4232403,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0170-3",
+   "Latitude": 37.2328392,
+   "Longitude": -80.4232369,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0170-7",
+   "Latitude": 37.2328261,
+   "Longitude": -80.4231823,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0170-8",
+   "Latitude": 37.2327981,
+   "Longitude": -80.4231954,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0170-9",
+   "Latitude": 37.2327309,
+   "Longitude": -80.4227462,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0170-2",
+   "Latitude": 37.2327159,
+   "Longitude": -80.4226886,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0170-10",
+   "Latitude": 37.2326977,
+   "Longitude": -80.422641,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0170-6",
+   "Latitude": 37.2327111,
+   "Longitude": -80.4225183,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0170-1",
+   "Latitude": 37.2327864,
+   "Longitude": -80.4224693,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0155-1",
+   "Latitude": 37.228932,
+   "Longitude": -80.426156,
+   "Covered?": "Yes",
+   "Capacity": 6
+ },
+ {
+   "Bike Rack ID": "0155-2",
+   "Latitude": 37.22909,
+   "Longitude": -80.425948,
+   "Covered?": "Yes",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0155-3",
+   "Latitude": 37.229226,
+   "Longitude": -80.425779,
+   "Covered?": "Yes",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0155-4",
+   "Latitude": 37.229346,
+   "Longitude": -80.425628,
+   "Covered?": "Yes",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0155-5",
+   "Latitude": 37.229466,
+   "Longitude": -80.425456,
+   "Covered?": "Yes",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0155-6",
+   "Latitude": 37.228917,
+   "Longitude": -80.425538,
+   "Covered?": "Yes",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0618A-1",
+   "Latitude": 37.233088,
+   "Longitude": -80.4206546,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0157-2",
+   "Latitude": 37.227929,
+   "Longitude": -80.426365,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0157-1",
+   "Latitude": 37.227994,
+   "Longitude": -80.42614,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0158-1",
+   "Latitude": 37.228197,
+   "Longitude": -80.42592,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0158-3",
+   "Latitude": 37.228218,
+   "Longitude": -80.42589,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0158-2",
+   "Latitude": 37.228401,
+   "Longitude": -80.425737,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0153-5",
+   "Latitude": 37.228493,
+   "Longitude": -80.425144,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0153-3",
+   "Latitude": 37.2283365,
+   "Longitude": -80.4248108,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0153-6",
+   "Latitude": 37.2283613,
+   "Longitude": -80.4247853,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0153-8",
+   "Latitude": 37.2283802,
+   "Longitude": -80.4247572,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0153-4",
+   "Latitude": 37.2283114,
+   "Longitude": -80.424787,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0153-9",
+   "Latitude": 37.2283357,
+   "Longitude": -80.4247619,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0153-10",
+   "Latitude": 37.2283592,
+   "Longitude": -80.4247377,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0156-1",
+   "Latitude": 37.2274547,
+   "Longitude": -80.4255715,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0156-8",
+   "Latitude": 37.2274301,
+   "Longitude": -80.4255487,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0156-2",
+   "Latitude": 37.2274344,
+   "Longitude": -80.4254468,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0156-3",
+   "Latitude": 37.2275054,
+   "Longitude": -80.4253649,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0172-3",
+   "Latitude": 37.22986,
+   "Longitude": -80.425061,
+   "Covered?": "Yes",
+   "Capacity": 21
+ },
+ {
+   "Bike Rack ID": "0172-1",
+   "Latitude": 37.230162,
+   "Longitude": -80.424721,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0172-5",
+   "Latitude": 37.229743,
+   "Longitude": -80.424665,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0172-2",
+   "Latitude": 37.22986,
+   "Longitude": -80.424496,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0172-4",
+   "Latitude": 37.229884,
+   "Longitude": -80.42446,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133C-1",
+   "Latitude": 37.230336,
+   "Longitude": -80.424666,
+   "Covered?": "No",
+   "Capacity": 28
+ },
+ {
+   "Bike Rack ID": "0134-4",
+   "Latitude": 37.230677,
+   "Longitude": -80.424589,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0134-5",
+   "Latitude": 37.230705,
+   "Longitude": -80.424619,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0134-3",
+   "Latitude": 37.231193,
+   "Longitude": -80.424063,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0134-2",
+   "Latitude": 37.231349,
+   "Longitude": -80.424251,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0134-1",
+   "Latitude": 37.23139,
+   "Longitude": -80.424271,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-1",
+   "Latitude": 37.231232,
+   "Longitude": -80.423414,
+   "Covered?": "Yes",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0200-4",
+   "Latitude": 37.2314,
+   "Longitude": -80.423174,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0200-7",
+   "Latitude": 37.231434,
+   "Longitude": -80.423139,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0200-2",
+   "Latitude": 37.231522,
+   "Longitude": -80.422827,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0200-1",
+   "Latitude": 37.231552,
+   "Longitude": -80.42287,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0126-2",
+   "Latitude": 37.231786,
+   "Longitude": -80.422921,
+   "Covered?": "No",
+   "Capacity": 20
+ },
+ {
+   "Bike Rack ID": "0126-3",
+   "Latitude": 37.231799,
+   "Longitude": -80.42329,
+   "Covered?": "No ",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0126-1",
+   "Latitude": 37.231818,
+   "Longitude": -80.423306,
+   "Covered?": "No ",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0193-1",
+   "Latitude": 37.229318,
+   "Longitude": -80.424857,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0193-2",
+   "Latitude": 37.229168,
+   "Longitude": -80.42467,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0193-3",
+   "Latitude": 37.229029,
+   "Longitude": -80.424412,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0193-4",
+   "Latitude": 37.229002,
+   "Longitude": -80.424377,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0153-1",
+   "Latitude": 37.228921,
+   "Longitude": -80.424332,
+   "Covered?": "No ",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0153-2",
+   "Latitude": 37.228664,
+   "Longitude": -80.423991,
+   "Covered?": "No ",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0176-1",
+   "Latitude": 37.229366,
+   "Longitude": -80.424154,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0176-2",
+   "Latitude": 37.22941,
+   "Longitude": -80.424086,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0171-4",
+   "Latitude": 37.229744,
+   "Longitude": -80.424127,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0171-3",
+   "Latitude": 37.229725,
+   "Longitude": -80.424097,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0171-1",
+   "Latitude": 37.229703,
+   "Longitude": -80.424064,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0171-2",
+   "Latitude": 37.22967,
+   "Longitude": -80.424031,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0176-3",
+   "Latitude": 37.229623,
+   "Longitude": -80.423731,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0132-4",
+   "Latitude": 37.229271,
+   "Longitude": -80.423235,
+   "Covered?": "No",
+   "Capacity": 6
+ },
+ {
+   "Bike Rack ID": "0132-3",
+   "Latitude": 37.229252,
+   "Longitude": -80.423208,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0132-5",
+   "Latitude": 37.22924,
+   "Longitude": -80.423194,
+   "Covered?": "No",
+   "Capacity": 6
+ },
+ {
+   "Bike Rack ID": "0176-4",
+   "Latitude": 37.228804,
+   "Longitude": -80.422726,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0176-5",
+   "Latitude": 37.228785,
+   "Longitude": -80.422706,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-10",
+   "Latitude": 37.230011,
+   "Longitude": -80.423802,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-13",
+   "Latitude": 37.230066,
+   "Longitude": -80.423703,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-9",
+   "Latitude": 37.230089,
+   "Longitude": -80.423678,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-6",
+   "Latitude": 37.230265,
+   "Longitude": -80.423418,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-15",
+   "Latitude": 37.230287,
+   "Longitude": -80.423383,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-12",
+   "Latitude": 37.230447,
+   "Longitude": -80.423223,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-4",
+   "Latitude": 37.230468,
+   "Longitude": -80.423191,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0133-11",
+   "Latitude": 37.230488,
+   "Longitude": -80.423163,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0132-3",
+   "Latitude": 37.229954,
+   "Longitude": -80.423495,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0133-8",
+   "Latitude": 37.230101,
+   "Longitude": -80.423492,
+   "Covered?": "No",
+   "Capacity": 18
+ },
+ {
+   "Bike Rack ID": "0133-7",
+   "Latitude": 37.230131,
+   "Longitude": -80.423452,
+   "Covered?": "No",
+   "Capacity": 18
+ },
+ {
+   "Bike Rack ID": "0132-2",
+   "Latitude": 37.230112,
+   "Longitude": -80.423272,
+   "Covered?": "No",
+   "Capacity": 18
+ },
+ {
+   "Bike Rack ID": "0132-5",
+   "Latitude": 37.23029,
+   "Longitude": -80.423223,
+   "Covered?": "No",
+   "Capacity": 18
+ },
+ {
+   "Bike Rack ID": "0133-3",
+   "Latitude": 37.230524,
+   "Longitude": -80.423023,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0133-14",
+   "Latitude": 37.230541,
+   "Longitude": -80.422999,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0200-5",
+   "Latitude": 37.230672,
+   "Longitude": -80.42283,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0200-6",
+   "Latitude": 37.230698,
+   "Longitude": -80.422852,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0130-1",
+   "Latitude": 37.230317,
+   "Longitude": -80.422872,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0130-2",
+   "Latitude": 37.230379,
+   "Longitude": -80.422771,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0130-3",
+   "Latitude": 37.230454,
+   "Longitude": -80.422656,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0200-3",
+   "Latitude": 37.231092,
+   "Longitude": -80.422421,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0200-8",
+   "Latitude": 37.231112,
+   "Longitude": -80.422395,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0129-3",
+   "Latitude": 37.231093,
+   "Longitude": -80.422332,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0129-2",
+   "Latitude": 37.231063,
+   "Longitude": -80.4223,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0129-4",
+   "Latitude": 37.23103,
+   "Longitude": -80.422265,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0129-1",
+   "Latitude": 37.231164,
+   "Longitude": -80.421996,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0151-7",
+   "Latitude": 37.230597,
+   "Longitude": -80.422184,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0151-6",
+   "Latitude": 37.230688,
+   "Longitude": -80.422231,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0151-1",
+   "Latitude": 37.230975,
+   "Longitude": -80.421818,
+   "Covered?": "No",
+   "Capacity": 20
+ },
+ {
+   "Bike Rack ID": "0151-2",
+   "Latitude": 37.230896,
+   "Longitude": -80.421707,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0127-1",
+   "Latitude": 37.229468,
+   "Longitude": -80.422213,
+   "Covered?": "Yes",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0127-2",
+   "Latitude": 37.229501,
+   "Longitude": -80.422153,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0127-3",
+   "Latitude": 37.229408,
+   "Longitude": -80.421792,
+   "Covered?": "No",
+   "Capacity": 20
+ },
+ {
+   "Bike Rack ID": "0127-4",
+   "Latitude": 37.229367,
+   "Longitude": -80.421734,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0130-4",
+   "Latitude": 37.230187,
+   "Longitude": -80.42188,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0130-5",
+   "Latitude": 37.230166,
+   "Longitude": -80.421862,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0130-6",
+   "Latitude": 37.230149,
+   "Longitude": -80.421837,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0151-3",
+   "Latitude": 37.230584,
+   "Longitude": -80.421294,
+   "Covered?": "No",
+   "Capacity": 18
+ },
+ {
+   "Bike Rack ID": "0151-9",
+   "Latitude": 37.230505,
+   "Longitude": -80.421337,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0151-4",
+   "Latitude": 37.230486,
+   "Longitude": -80.421265,
+   "Covered?": "No",
+   "Capacity": 22
+ },
+ {
+   "Bike Rack ID": "0151-8",
+   "Latitude": 37.230264,
+   "Longitude": -80.421158,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0276-1",
+   "Latitude": 37.226664,
+   "Longitude": -80.426286,
+   "Covered?": "No",
+   "Capacity": 6
+ },
+ {
+   "Bike Rack ID": "0156-6",
+   "Latitude": 37.226677,
+   "Longitude": -80.425088,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0156-7",
+   "Latitude": 37.226696,
+   "Longitude": -80.425064,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0156-5",
+   "Latitude": 37.226947,
+   "Longitude": -80.424728,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0156-9",
+   "Latitude": 37.226965,
+   "Longitude": -80.424702,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0156-4",
+   "Latitude": 37.22711,
+   "Longitude": -80.424575,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0152-8",
+   "Latitude": 37.227471,
+   "Longitude": -80.424608,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0152-4",
+   "Latitude": 37.227452,
+   "Longitude": -80.424574,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0152-7",
+   "Latitude": 37.227421,
+   "Longitude": -80.424541,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0152-3",
+   "Latitude": 37.227566,
+   "Longitude": -80.424306,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0152-5",
+   "Latitude": 37.227587,
+   "Longitude": -80.424273,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0152-6",
+   "Latitude": 37.227613,
+   "Longitude": -80.424251,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0152-1",
+   "Latitude": 37.228199,
+   "Longitude": -80.423599,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0152-2",
+   "Latitude": 37.228175,
+   "Longitude": -80.423569,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0201-1",
+   "Latitude": 37.231474,
+   "Longitude": -80.421835,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "2014-1",
+   "Latitude": 37.23139,
+   "Longitude": -80.421443,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "2014-2",
+   "Latitude": 37.231516,
+   "Longitude": -80.421293,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0203-1",
+   "Latitude": 37.231834,
+   "Longitude": -80.421317,
+   "Covered?": "No",
+   "Capacity": 11
+ },
+ {
+   "Bike Rack ID": "0007-1",
+   "Latitude": 37.230869,
+   "Longitude": -80.420865,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0007-2",
+   "Latitude": 37.230849,
+   "Longitude": -80.420848,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0001-5",
+   "Latitude": 37.230783,
+   "Longitude": -80.420244,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0001-4",
+   "Latitude": 37.230815,
+   "Longitude": -80.42019,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0001-6",
+   "Latitude": 37.230839,
+   "Longitude": -80.420152,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0006-1",
+   "Latitude": 37.231552,
+   "Longitude": -80.420025,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0006-3",
+   "Latitude": 37.231836,
+   "Longitude": -80.419639,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0006-2",
+   "Latitude": 37.231855,
+   "Longitude": -80.419613,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "001-2",
+   "Latitude": 37.231185,
+   "Longitude": -80.419654,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0001-1",
+   "Latitude": 37.231215,
+   "Longitude": -80.4196,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "001-3",
+   "Latitude": 37.231238,
+   "Longitude": -80.419568,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0174-8",
+   "Latitude": 37.230281,
+   "Longitude": -80.420711,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0174-7",
+   "Latitude": 37.230166,
+   "Longitude": -80.420813,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0174-6",
+   "Latitude": 37.230081,
+   "Longitude": -80.420816,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0174-5",
+   "Latitude": 37.229836,
+   "Longitude": -80.420805,
+   "Covered?": "No",
+   "Capacity": 24
+ },
+ {
+   "Bike Rack ID": "0174-4",
+   "Latitude": 37.229625,
+   "Longitude": -80.420606,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0174-10",
+   "Latitude": 37.229467,
+   "Longitude": -80.420376,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0174-3",
+   "Latitude": 37.229432,
+   "Longitude": -80.420334,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0174-9",
+   "Latitude": 37.229386,
+   "Longitude": -80.420298,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0003-3",
+   "Latitude": 37.230213,
+   "Longitude": -80.420285,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0003-1",
+   "Latitude": 37.230168,
+   "Longitude": -80.420233,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0003-2",
+   "Latitude": 37.230013,
+   "Longitude": -80.420131,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0174-2",
+   "Latitude": 37.229425,
+   "Longitude": -80.420038,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0174-1",
+   "Latitude": 37.229572,
+   "Longitude": -80.419691,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0188-1",
+   "Latitude": 37.232055,
+   "Longitude": -80.418838,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0188-2",
+   "Latitude": 37.231779,
+   "Longitude": -80.418827,
+   "Covered?": "No",
+   "Capacity": 8
+ },
+ {
+   "Bike Rack ID": "0002-1",
+   "Latitude": 37.231238,
+   "Longitude": -80.418945,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0002-3",
+   "Latitude": 37.231194,
+   "Longitude": -80.418901,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0002-2",
+   "Latitude": 37.231203,
+   "Longitude": -80.418754,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0002-4",
+   "Latitude": 37.231174,
+   "Longitude": -80.418722,
+   "Covered?": "No",
+   "Capacity": 14
+ },
+ {
+   "Bike Rack ID": "0188-3",
+   "Latitude": 37.231297,
+   "Longitude": -80.418211,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0063-1",
+   "Latitude": 37.227457,
+   "Longitude": -80.438363,
+   "Covered?": "No",
+   "Capacity": 12
+ },
+ {
+   "Bike Rack ID": "0065-1",
+   "Latitude": 37.226433,
+   "Longitude": -80.438379,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0077-1",
+   "Latitude": 37.225625,
+   "Longitude": -80.438905,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0077-2",
+   "Latitude": 37.225489,
+   "Longitude": -80.438986,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0076-1",
+   "Latitude": 37.225113,
+   "Longitude": -80.439452,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0076-2",
+   "Latitude": 37.22475,
+   "Longitude": -80.439479,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0075-1",
+   "Latitude": 37.224042,
+   "Longitude": -80.439071,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0075-2",
+   "Latitude": 37.223829,
+   "Longitude": -80.438701,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0074-1",
+   "Latitude": 37.223816,
+   "Longitude": -80.437999,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0074-2",
+   "Latitude": 37.223765,
+   "Longitude": -80.437827,
+   "Covered?": "No",
+   "Capacity": 16
+ },
+ {
+   "Bike Rack ID": "0068-1",
+   "Latitude": 37.224499,
+   "Longitude": -80.437049,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0078-2",
+   "Latitude": 37.2251,
+   "Longitude": -80.436097,
+   "Covered?": "No",
+   "Capacity": 10
+ },
+ {
+   "Bike Rack ID": "0390-1",
+   "Latitude": 37.224604,
+   "Longitude": -80.429102,
+   "Covered?": "No",
+   "Capacity": 10
+ }
+]
