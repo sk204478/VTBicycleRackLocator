@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeSharpIcon from '@mui/icons-material/HomeSharp';
@@ -17,7 +17,7 @@ function BottomIconDrawer() {
 
   return (
     <div style={{ position: 'fixed', bottom: '10px', right: '10px' }}>
-      <IconButton ref={anchorRef} onClick={handleToggle}>
+      <IconButton ref={anchorRef} onClick={handleToggle} size="large">
         <MenuIcon />
       </IconButton>
 
@@ -32,7 +32,7 @@ function BottomIconDrawer() {
             <IconButton
               onClick={() => {
                 /* Navigate or do something for Route 1 */
-              }}
+              }} size="large"
             >
               <HomeSharpIcon />
             </IconButton>
@@ -44,10 +44,10 @@ function BottomIconDrawer() {
             flexDirection="column"
             alignItems="center"
           >
-            <IconButton
+            <IconButton 
               onClick={() => {
                 /* Navigate or do something for Route 2 */
-              }}
+              }} size="large"
             >
               <HelpSharpIcon />
             </IconButton>
