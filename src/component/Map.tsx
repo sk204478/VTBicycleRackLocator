@@ -35,6 +35,17 @@ function Map() {
   const [origin, setOrigin] = useState(null);
   const [destination, setDestination] = useState(null);
   const [directionsResponse, setDirectionsResponse] = useState(null);
+  const [showCoveredOnly, setShowCoveredOnly] = useState(false);
+  const [selectedBuildings, setSelectedBuildings] = useState([]);
+  const [selectedLocation, setSelectedLocation] = useState(null);
+
+  const handleBuildingSelect = (event, newValue) => {
+    setSelectedBuildings(newValue);
+  };  
+
+  const handleBuildingUnselect = () => {
+    setSelectedBuildings([]);
+  }
 
   const requestDirections = (origin, destination) => {
     if (!origin || !destination) return;
@@ -112,8 +123,6 @@ function Map() {
     });
   };
 
-
-
   const getPixelPositionOffset = (width, height) => {
     return {
       x: 7,
@@ -126,7 +135,7 @@ function Map() {
     language: 'EN'
   });
 
-  const [selectedLocation, setSelectedLocation] = useState(null);
+  
 
   // Function to handle marker click
   const handleMarkerClick = (location, event) => {
@@ -153,14 +162,27 @@ function Map() {
             onClick={handleClose}
             onLoad={handleMapLoad}
           >
-            {data.map((location, index) => (
-              <Marker
-                key={index}
-                icon={adjustIcon}
-                position={{ lat: location.Latitude, lng: location.Longitude }}
-                onClick={(event) => handleMarkerClick(location, event)}
-              />
-            ))}
+            {data.map((location, index) => {
+              // If we are showing covered only and this marker is not covered, don't render it
+              if (showCoveredOnly && location['Covered?'] !== "Yes") {
+                return null;
+              }
+              
+
+              if (selectedBuildings.length > 0 && !selectedBuildings.some(building => location.Nearest_Building_Name === building.Buildings)) {
+                return null; // If not, do not render this marker
+              }
+
+              // Otherwise, render the Marker as usual
+              return (
+                <Marker
+                  key={index}
+                  icon={adjustIcon}
+                  position={{ lat: location.Latitude, lng: location.Longitude }}
+                  onClick={(event) => handleMarkerClick(location, event)}
+                />
+              );
+            })}
             {selectedLocation && (
               <OverlayViewF
                 mapPaneName={'floatPane'}
@@ -193,7 +215,15 @@ function Map() {
           </GoogleMap>
         </Box>
       </Grid>
-      <ControlPanel origin={origin} destination={destination} setDelete={handleDeleteBoth} onRequestDirections={handleRequestDirections}/>
+      <ControlPanel 
+        origin={origin} 
+        destination={destination} 
+        setDelete={handleDeleteBoth} 
+        onRequestDirections={handleRequestDirections} 
+        onToggleCovered={setShowCoveredOnly} 
+        onToggleNearTo={handleBuildingSelect}
+        offToggleNearTo={handleBuildingUnselect}
+      />
     </Grid>
   );
 }

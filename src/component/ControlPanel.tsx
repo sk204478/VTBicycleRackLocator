@@ -7,14 +7,32 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
+import BuildingNames from '../datas/buildings.json';
 
 import { useState } from 'react';
 
-function NestedList({ origin, destination, setDelete, onRequestDirections }) {
-  const [open, setOpen] = useState(true);
+function NestedList({ origin, destination, setDelete, onRequestDirections, onToggleCovered, onToggleNearTo, offToggleNearTo }) {
+  const [open, setOpen] = useState(false);
   const handleClick = () => {
-    setOpen(!open);
+    const newOpenState = !open;
+    setOpen(newOpenState);
+    setShowNearTo(newOpenState);
+    // If collapsing, also reset the selected buildings
+    if (open) {
+      offToggleNearTo();
+    }
   };
+
+  const [showNearTo, setShowNearTo] = useState(false);
+
+  const handleToggleShowNearTo = (event) => {
+    setShowNearTo(event.target.checked);
+    if (!event.target.checked) {
+      // If turning off the switch, reset the selected buildings
+      offToggleNearTo();
+    }
+  };
+
 
   return (
     <Grid item xs={3} style={{ display: 'flex', flexDirection: 'column', height: '100%', width: '100%', maxWidth: '360px'}}>
@@ -74,7 +92,7 @@ function NestedList({ origin, destination, setDelete, onRequestDirections }) {
           <Divider variant="middle"  />
           <ListItemButton>
             <ListItemIcon>
-              <Switch size="small" />
+              <Switch size="small" onChange={(e) => onToggleCovered(e.target.checked)}/>
             </ListItemIcon>
             <ListItemText primary="Show Only Covered" />
           </ListItemButton>
@@ -82,7 +100,7 @@ function NestedList({ origin, destination, setDelete, onRequestDirections }) {
 
           <ListItemButton onClick={handleClick}>
             <ListItemIcon>
-              <Switch  size="small" />
+              <Switch size="small" checked={showNearTo} onChange={handleToggleShowNearTo}/>
             </ListItemIcon>
             <ListItemText primary="Show Near to " />
             {open ? <ExpandLess /> : <ExpandMore />}
@@ -91,22 +109,23 @@ function NestedList({ origin, destination, setDelete, onRequestDirections }) {
           <Collapse in={open} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
               <ListItemButton >
-                <Autocomplete
-                  limitTags={1}
-                  multiple
-                  id="tags-outlined"
-                  options={tempBuildings}
-                  getOptionLabel={(option) => option.title}
-                  filterSelectedOptions
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      label="Location"
-                      placeholder="Location"
-                    />
-                  )}
-                  style={{width: "100%"}}
-                />
+              <Autocomplete
+                multiple
+                id="tags-outlined"
+                options={BuildingNames}
+                limitTags={1}
+                getOptionLabel={(option) => option.Buildings}
+                filterSelectedOptions
+                onChange={onToggleNearTo}
+                renderInput={(params) => (
+                  <TextField
+                    {...params}
+                    label="Location"
+                    placeholder="Location"
+                  />
+                )}
+                style={{ width: "100%" }}
+              />
               </ListItemButton>
             </List>
           </Collapse>
@@ -149,11 +168,5 @@ function NestedList({ origin, destination, setDelete, onRequestDirections }) {
     </Grid>
   );  
 }
-
-const tempBuildings = [
-  { title: 'Newman Library'},
-  { title: 'Torgersen Hall'},
-  { title: 'Burruss Hall'}
-];
 
 export default NestedList;
