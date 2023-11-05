@@ -1,36 +1,23 @@
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import ModeStandbyIcon from '@mui/icons-material/ModeStandby';
+import { Grid, Box, Switch, Button, Stack, Autocomplete, List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Divider, Collapse, TextField} from '@mui/material';
+import  ModeStandbyIcon from '@mui/icons-material/ModeStandby';
 import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import BuildIcon from '@mui/icons-material/Build';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
-import Switch from '@mui/material/Switch';
-
-import Autocomplete from '@mui/material/Autocomplete';
-import TextField from '@mui/material/TextField';
-
-import ListSubheader from '@mui/material/ListSubheader';
-import List from '@mui/material/List';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
-
-import Collapse from '@mui/material/Collapse';
+import DeleteIcon from '@mui/icons-material/Delete';
+import SendIcon from '@mui/icons-material/Send';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 
 import { useState } from 'react';
 
-function NestedList() {
+function NestedList({ origin, destination, setDelete, onRequestDirections }) {
   const [open, setOpen] = useState(true);
-
   const handleClick = () => {
     setOpen(!open);
   };
 
   return (
-    <Grid item xs={3} style={{ display: 'flex', flexDirection: 'column', height: '100%'}}>
+    <Grid item xs={3} style={{ display: 'flex', flexDirection: 'column', height: '100%', width: '100%', maxWidth: '360px'}}>
       <Box >
         <List
           sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
@@ -105,9 +92,10 @@ function NestedList() {
             <List component="div" disablePadding>
               <ListItemButton >
                 <Autocomplete
+                  limitTags={1}
                   multiple
                   id="tags-outlined"
-                  options={top100Films}
+                  options={tempBuildings}
                   getOptionLabel={(option) => option.title}
                   filterSelectedOptions
                   renderInput={(params) => (
@@ -136,109 +124,36 @@ function NestedList() {
             </ListSubheader>
           }
         >
-        <Divider variant="middle"  />
-
-        <Divider variant="middle"  />
-        
-        <Divider variant="middle"  />
+        <Box component="form" sx={{'& > :not(style)': { m: 0.2, ml: 1.7} }} noValidate autoComplete="off" style={{width:"100%"}}>
+          <TextField 
+            disabled size="small" 
+            id="outlined-basic" 
+            label="Origin" 
+            variant="outlined" 
+            helperText="Select origin from map" 
+            style={{width:"92%"}} 
+            value={origin ? `${origin.lat}, ${origin.lng}` : ''}
+          />
+          <TextField disabled size="small" id="outlined-basic" label="Destination" variant="outlined" helperText="Select Destination from map" style={{width:"92%"}} value={destination ? `${destination.lat}, ${destination.lng}` : ''}/>
+          <Stack direction="row" spacing={1}>
+            <Button variant="outlined" startIcon={<DeleteIcon />} style={{width:"47%"}} onClick={setDelete}>
+              RESET
+            </Button>
+            <Button variant="contained" startIcon={<SendIcon />} style={{width:"47%"}} onClick={onRequestDirections}>
+              Direction
+            </Button>
+          </Stack>
+        </Box>
         </List>
       </Box>
     </Grid>
   );  
 }
 
-const top100Films = [
-  { title: 'Newman Library', year: 1994 },
-  { title: 'Torgersen Hall', year: 1972 }
+const tempBuildings = [
+  { title: 'Newman Library'},
+  { title: 'Torgersen Hall'},
+  { title: 'Burruss Hall'}
 ];
 
 export default NestedList;
-
-/*
-export default function InsetList() {
-  return (
-    <List
-      sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-      aria-label="contacts"
-    >
-      <ListItem disablePadding>
-        <ListItemButton>
-          <ListItemIcon>
-            <HomeSharpIcon />
-          </ListItemIcon>
-          <ListItemText primary="Chelsea Otakan" />
-        </ListItemButton>
-      </ListItem>
-      <ListItem disablePadding>
-        <ListItemButton>
-          <ListItemIcon>
-            <HomeSharpIcon />
-          </ListItemIcon>
-          <ListItemText primary="Chelsea Otakan" />
-        </ListItemButton>
-      </ListItem>
-    </List>
-  );
-}
-
-
-function Legend() {
-  return (
-    <Grid item xs={3} style={{border: '1px solid green'}}>
-      <Box display="flex" flexDirection="column" alignItems="left" style={{border: '1px solid red', marginBottom:"10px"}}>
-        <Box
-          bgcolor="yellow"
-          mb={1}
-          p={1}
-          style={{ border: '1px solid black' }}
-        >
-          Yellow Box 1
-        </Box>
-        <Box
-          bgcolor="yellow"
-          mb={1}
-          p={1}
-          style={{ border: '1px solid black' }}
-        >
-          Yellow Box 2
-        </Box>
-        <Box bgcolor="yellow" p={1} style={{ border: '1px solid black' }}>
-          Yellow Box 3
-        </Box>
-      </Box>
-      <Box height="100%" display="flex" flexDirection="column" alignItems="left" style={{border: '1px solid red'}}>
-        <Box
-          bgcolor="yellow"
-          mb={1}
-          p={1}
-          style={{ border: '1px solid black' }}
-        >
-          Yellow Box 4
-        </Box>
-      </Box>
-    </Grid>
-  );
-}
-
-
-
-
-        <ListItemButton onClick={handleClick}>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
-          {open ? <ExpandLess /> : <ExpandMore />}
-        </ListItemButton>
-        
-        <Collapse in={open} timeout="auto" unmountOnExit>
-          <List component="div" disablePadding>
-            <ListItemButton sx={{ pl: 4 }}>
-              <ListItemIcon>
-                <StarBorder />
-              </ListItemIcon>
-              <ListItemText primary="Starred" />
-            </ListItemButton>
-          </List>
-        </Collapse>
-*/

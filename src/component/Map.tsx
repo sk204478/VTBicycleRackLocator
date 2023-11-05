@@ -1,11 +1,11 @@
-import { useState, useCallback, useRef } from 'react';
-import { GoogleMap, Marker, OverlayViewF, useLoadScript } from '@react-google-maps/api';
+import { useState, useCallback, useRef, useEffect } from 'react';
+import { GoogleMap, Marker, OverlayViewF, useLoadScript, DirectionsRenderer } from '@react-google-maps/api';
 import { Grid, Box }  from '@mui/material';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import data from '../datas/bicycle_rack_coordinates_data.json';
 import InfoCard from './InfoCard';
 import ReactDOM from 'react-dom';
-import Legend from './ControlPanel';
+import ControlPanel from './ControlPanel';
 
 const adjustIconPath = "M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z";
 
@@ -34,14 +34,51 @@ function Map() {
   // 
   const [origin, setOrigin] = useState(null);
   const [destination, setDestination] = useState(null);
-  const [showInputScreen, setShowInputScreen] = useState(false);
+  const [directionsResponse, setDirectionsResponse] = useState(null);
+
+  const requestDirections = (origin, destination) => {
+    if (!origin || !destination) return;
+
+    const directionsService = new google.maps.DirectionsService();
+    directionsService.route(
+      {
+        origin: new google.maps.LatLng(origin.lat, origin.lng),
+        destination: new google.maps.LatLng(destination.lat, destination.lng),
+        travelMode: google.maps.TravelMode.BICYCLING, // You can change the travel mode
+      },
+      (result, status) => {
+        if (status === google.maps.DirectionsStatus.OK) {
+          setDirectionsResponse(result);
+        } else {
+          console.error(`error fetching directions ${result}`);
+        }
+      }
+    );
+  };
+
+  const handleRequestDirections = () => {
+    if (origin && destination) {
+      requestDirections(origin, destination);
+      setSelectedLocation(null);
+    }
+  };
+
   const handleSetOrigin = (location) => {
     setOrigin({ lat: location.Latitude, lng: location.Longitude });
-    setShowInputScreen(true); // show the input screen
   };
   const handleSetDestination = (location) => {
     setDestination({ lat: location.Latitude, lng: location.Longitude });
-    setShowInputScreen(true); // show the input screen
+  };
+  const handleDeleteBoth = () => {
+    setDirectionsResponse(null);
+    setOrigin(null);
+    setDestination(null);
+
+    if (mapRef.current) {
+      mapRef.current.panTo(defaultCenter);
+      mapRef.current.setZoom(16);
+      setSelectedLocation(null);
+    }
   };
 
   const mapRef = useRef<google.maps.Map | null>(null);
@@ -71,6 +108,7 @@ function Map() {
     controlDiv.addEventListener('click', () => {
       const center = { lat: 37.228366, lng: -80.421728 };
       map.panTo(center);
+      mapRef.current.setZoom(16);
     });
   };
 
@@ -80,13 +118,6 @@ function Map() {
     return {
       x: 7,
       y: -(height)+5,
-    };
-  };
-
-  const getPixelPositionOffsetForInputScreen = (width, height) => {
-    return {
-      x: width,
-      y: height,
     };
   };
 
@@ -110,8 +141,6 @@ function Map() {
 
   if (loadError) return <div>Error loading maps</div>;
   if (!isLoaded) return <div>Loading...</div>;
-
-  
 
   return (
     <Grid container sx={{ ml: 1, mt: 1}}>
@@ -154,30 +183,19 @@ function Map() {
                 </div>
               </OverlayViewF>
             )}
+            {directionsResponse && (
+              <DirectionsRenderer
+                options={{ 
+                  directions: directionsResponse
+                }}
+              />
+            )}
           </GoogleMap>
         </Box>
       </Grid>
-      <Legend />
+      <ControlPanel origin={origin} destination={destination} setDelete={handleDeleteBoth} onRequestDirections={handleRequestDirections}/>
     </Grid>
   );
 }
 
 export default Map;
-
-/*
-          {showInputScreen && (
-            <OverlayViewF
-              position={mapRef.current?.getCenter() || defaultCenter} // Use the center of the map for positioning
-              mapPaneName="overlayMouseTarget" // FLOAT_PANE is typically used for UI overlays
-              getPixelPositionOffset={getPixelPositionOffsetForInputScreen} // This function positions the UI element
-            >
-              <DirectionsInputScreen
-                origin={origin}
-                destination={destination}
-                setOrigin={setOrigin}
-                setDestination={setDestination}
-                setShowInputScreen={setShowInputScreen}
-              />
-            </OverlayViewF>
-          )}
-*/
