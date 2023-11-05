@@ -1,15 +1,19 @@
-
 import { createRoot } from 'react-dom/client';
-import BottomDrawer from './component/BottomDrawer'; // Assuming BottomDrawer is a default export
-import BasicGrid from './Layout';
+import Grid from '@mui/material/Grid';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
+import Map from './pages/Map';
+import Weather from './component/Weather';
+import BottomDrawer from './component/BottomDrawer';
 
 const root = createRoot(document.getElementById('app'));
 
 root.render(
   <ThemeProvider theme={theme}>
-    <BasicGrid />
+    <Grid container spacing={1}>
+      <Weather />
+      <Map />
+    </Grid>
     <BottomDrawer />
   </ThemeProvider>
 );
