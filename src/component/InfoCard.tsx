@@ -16,7 +16,7 @@ export default function InfoCard({ bikeRackId, covered, capacity, latitude, long
     
   return (
     <>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ width: '100%' }}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -37,12 +37,14 @@ export default function InfoCard({ bikeRackId, covered, capacity, latitude, long
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" onClick={() => onSetOrigin({ Latitude: latitude, Longitude: longitude })}>
-            Origin
-          </Button>
-          <Button size="small" color="primary" onClick={() => onSetDestination({ Latitude: latitude, Longitude: longitude })}>
-            Destination
-          </Button>
+          <Box width="100%" display="flex" justifyContent="space-between"> {/* Use Box to create a flex container */}
+            <Button size="small" color="primary" onClick={() => onSetOrigin({ Latitude: latitude, Longitude: longitude })}>
+              Origin
+            </Button>
+            <Button size="small" color="primary" onClick={() => onSetDestination({ Latitude: latitude, Longitude: longitude })}>
+              Destination
+            </Button>
+          </Box>
         </CardActions>
       </Card>
       <Modal

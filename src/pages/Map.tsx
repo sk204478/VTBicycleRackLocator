@@ -152,8 +152,8 @@ function Map() {
   if (!isLoaded) return <div>Loading...</div>;
 
   return (
-    <Grid container sx={{ ml: 1, mt: 1}} >
-        <Grid item xs={8.9} sx={{}}>
+    <Grid container spacing={1} >
+        <Grid item xs={12} md={9} lg={9}>
           <Paper elevation={4}>
             <Box height={710} width="100%" >
               <GoogleMap
@@ -218,7 +218,7 @@ function Map() {
             </Box>
           </Paper>
         </Grid>
-        <Grid item xs={3} sx={{ml:1, mr:0.3}} >
+        <Grid item xs={12} md={3} lg={3}>
           <Paper elevation={4} >
             <ControlPanel 
               origin={origin} 
@@ -230,7 +230,7 @@ function Map() {
               offToggleNearTo={handleBuildingUnselect}
             />
           </Paper>
-      </Grid>
+        </Grid>
     </Grid>
   );
 }

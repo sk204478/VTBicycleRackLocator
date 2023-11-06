@@ -38,7 +38,7 @@ function NestedList({ origin, destination, setDelete, onRequestDirections, onTog
     <Grid item xs={3} style={{ display: 'flex', flexDirection: 'column', height: '100%', width: '100%', maxWidth: '360px'}}>
       <Box >
         <List
-          sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+          sx={{ width: '100%', bgcolor: 'background.paper' }}
           component="nav"
           aria-labelledby="nested-list-subheader"
           subheader={
@@ -80,7 +80,7 @@ function NestedList({ origin, destination, setDelete, onRequestDirections, onTog
       </Box>
       <Box >
         <List
-          sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+          sx={{ width: '100%', bgcolor: 'background.paper' }}
           component="nav"
           aria-labelledby="nested-list-subheader"
           subheader={
@@ -121,6 +121,7 @@ function NestedList({ origin, destination, setDelete, onRequestDirections, onTog
                   <TextField
                     {...params}
                     label="Location"
+                    
                     placeholder="Location"
                   />
                 )}
@@ -134,7 +135,7 @@ function NestedList({ origin, destination, setDelete, onRequestDirections, onTog
       </Box>
       <Box>
         <List
-          sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+          sx={{ width: '100%', bgcolor: 'background.paper' }}
           component="nav"
           aria-labelledby="nested-list-subheader"
           subheader={
@@ -146,6 +147,7 @@ function NestedList({ origin, destination, setDelete, onRequestDirections, onTog
         <Box component="form" sx={{'& > :not(style)': { m: 0.2, ml: 1.7} }} noValidate autoComplete="off" style={{width:"100%"}}>
           <TextField 
             disabled size="small" 
+            fullWidth
             id="outlined-basic" 
             label="Origin" 
             variant="outlined" 

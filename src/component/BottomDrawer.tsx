@@ -3,13 +3,16 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeSharpIcon from '@mui/icons-material/HomeSharp';
 import HelpSharpIcon from '@mui/icons-material/HelpSharp';
+import NavigationIcon from '@mui/icons-material/Navigation';
 import Popper from '@mui/material/Popper';
-import Box from '@mui/material/Box';
+import { Box, Chip, Fab }from '@mui/material';
 import Typography from '@mui/material/Typography';
+import { useNavigate } from 'react-router-dom';
 
 function BottomIconDrawer() {
   const [open, setOpen] = useState(false);
   const anchorRef = useRef(null);
+  const navigate = useNavigate();
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
@@ -17,41 +20,42 @@ function BottomIconDrawer() {
 
   return (
     <div style={{ position: 'fixed', bottom: '10px', right: '10px' }}>
-      <IconButton ref={anchorRef} onClick={handleToggle} size="large">
-        <MenuIcon />
-      </IconButton>
+
+      <Fab 
+        variant="extended" 
+        ref={anchorRef} 
+        size="small" 
+        color="secondary" 
+        onClick={handleToggle}
+        sx={{padding:2}}
+      >
+        <MenuIcon sx={{ mr: 1 }} />
+        PAGES 
+      </Fab>
 
       <Popper open={open} anchorEl={anchorRef.current} placement="top-end">
         <Box display="flex" flexDirection="column" alignItems="center">
           <Box
-            mb={0.1}
+            mb={0.2}
             display="flex"
             flexDirection="column"
             alignItems="center"
           >
-            <IconButton
-              onClick={() => {
-                /* Navigate or do something for Route 1 */
-              }} size="large"
-            >
+            <Fab onClick={() => navigate('/')} size="medium" color="secondary" sx={{mb:0.5}}>
               <HomeSharpIcon />
-            </IconButton>
-            <Typography variant="caption">Home</Typography>
+              </Fab>
           </Box>
           <Box
-            mb={0.1}
+            mb={0.2}
             display="flex"
             flexDirection="column"
             alignItems="center"
           >
-            <IconButton 
-              onClick={() => {
-                /* Navigate or do something for Route 2 */
-              }} size="large"
+            <Fab
+              onClick={() => navigate('/help')} size="medium" color="secondary" sx={{mb:0.5}}
             >
               <HelpSharpIcon />
-            </IconButton>
-            <Typography variant="caption">Help</Typography>
+            </Fab>
           </Box>
         </Box>
       </Popper>
@@ -60,3 +64,7 @@ function BottomIconDrawer() {
 }
 
 export default BottomIconDrawer;
+
+
+
+//<Typography variant="button" display="block">Home</Typography>
