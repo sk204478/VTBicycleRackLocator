@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useCallback, useRef } from 'react';
 import { GoogleMap, Marker, OverlayViewF, useLoadScript, DirectionsRenderer } from '@react-google-maps/api';
 import { Grid, Box, Paper }  from '@mui/material';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
@@ -7,11 +7,9 @@ import InfoCard from '../component/InfoCard';
 import ReactDOM from 'react-dom';
 import ControlPanel from '../component/ControlPanel';
 
-const adjustIconPath = "M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z";
-
 // Create an icon object with the path
-const adjustIcon = {
-  path: adjustIconPath,
+const ModeStandbyIcon = {
+  path: "M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z",
   fillColor: '#630031', // Set the fill color for your icon
   fillOpacity: 1,    // Adjust opacity as needed
   scale: 0.5,        // Scale your icon down, SVG paths can be large
@@ -38,6 +36,7 @@ function Map() {
   const [showCoveredOnly, setShowCoveredOnly] = useState(false);
   const [selectedBuildings, setSelectedBuildings] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState(null);
+  const mapRef = useRef<google.maps.Map | null>(null);
 
   const handleBuildingSelect = (event, newValue) => {
     setSelectedBuildings(newValue);
@@ -55,7 +54,7 @@ function Map() {
       {
         origin: new google.maps.LatLng(origin.lat, origin.lng),
         destination: new google.maps.LatLng(destination.lat, destination.lng),
-        travelMode: google.maps.TravelMode.BICYCLING, // You can change the travel mode
+        travelMode: google.maps.TravelMode.BICYCLING,
       },
       (result, status) => {
         if (status === google.maps.DirectionsStatus.OK) {
@@ -92,7 +91,7 @@ function Map() {
     }
   };
 
-  const mapRef = useRef<google.maps.Map | null>(null);
+  
   
   const handleMapLoad = useCallback((map) => {
     mapRef.current = map; // Store the map instance when the map is loaded
@@ -178,7 +177,7 @@ function Map() {
                   return (
                     <Marker
                       key={index}
-                      icon={adjustIcon}
+                      icon={ModeStandbyIcon}
                       position={{ lat: location.Latitude, lng: location.Longitude }}
                       onClick={(event) => handleMarkerClick(location, event)}
                     />
