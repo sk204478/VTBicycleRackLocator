@@ -138,7 +138,7 @@
     "Bike_Rack_ID": "0180-11",
     "Latitude": 37.229897,
     "Longitude": -80.41727,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 8,
     "Nearest_Building_Name": "Squires Student Center",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/214/attachments/157"
@@ -264,7 +264,7 @@
     "Bike_Rack_ID": "0177-6",
     "Latitude": 37.228485,
     "Longitude": -80.419258,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Newman Library",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/209/attachments/153"
@@ -273,7 +273,7 @@
     "Bike_Rack_ID": "0177-1",
     "Latitude": 37.228476,
     "Longitude": -80.419151,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 22,
     "Nearest_Building_Name": "Newman Library",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/198/attachments/144"
@@ -525,7 +525,7 @@
     "Bike_Rack_ID": "0023-2",
     "Latitude": 37.2278,
     "Longitude": -80.419607,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Eggleston Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/331/attachments/262"
@@ -534,7 +534,7 @@
     "Bike_Rack_ID": "0021-1",
     "Latitude": 37.227739,
     "Longitude": -80.419671,
-    "Covered?": "Yes",
+    "Covered?": "No",
     "Capacity": 10,
     "Nearest_Building_Name": "Eggleston Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/326/attachments/257"
@@ -615,7 +615,7 @@
     "Bike_Rack_ID": "0025-6",
     "Latitude": 37.227147,
     "Longitude": -80.417638,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Vawter Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/284/attachments/184"
@@ -624,7 +624,7 @@
     "Bike_Rack_ID": "0025-7",
     "Latitude": 37.227136,
     "Longitude": -80.417598,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 12,
     "Nearest_Building_Name": "Vawter Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/315/attachments/234"
@@ -633,7 +633,7 @@
     "Bike_Rack_ID": "0025-3",
     "Latitude": 37.227076,
     "Longitude": -80.41763,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Vawter Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/315/attachments/233"
@@ -642,7 +642,7 @@
     "Bike_Rack_ID": "0025-2",
     "Latitude": 37.227087,
     "Longitude": -80.417667,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Vawter Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/284/attachments/185"
@@ -687,7 +687,7 @@
     "Bike_Rack_ID": "0026-2",
     "Latitude": 37.226098,
     "Longitude": -80.416652,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Whitehurst Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/365/attachments/288"
@@ -696,7 +696,7 @@
     "Bike_Rack_ID": "0026-3",
     "Latitude": 37.226086,
     "Longitude": -80.416631,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Whitehurst Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/313/attachments/230"
@@ -705,7 +705,7 @@
     "Bike_Rack_ID": "0026-5",
     "Latitude": 37.226058,
     "Longitude": -80.416655,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Whitehurst Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/365/attachments/289"
@@ -714,7 +714,7 @@
     "Bike_Rack_ID": "0026-6",
     "Latitude": 37.226072,
     "Longitude": -80.416679,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Whitehurst Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/313/attachments/230"
@@ -732,7 +732,7 @@
     "Bike_Rack_ID": "0026-7",
     "Latitude": 37.225994,
     "Longitude": -80.416657,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Whitehurst Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/304/attachments/232"
@@ -1173,7 +1173,7 @@
     "Bike_Rack_ID": "0189-9",
     "Latitude": 37.2247836,
     "Longitude": -80.4207242,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Dietrick Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/235/attachments/224"
@@ -1182,7 +1182,7 @@
     "Bike_Rack_ID": "0189-3",
     "Latitude": 37.2247718,
     "Longitude": -80.4207107,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Dietrick Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/360/attachments/295"
@@ -1191,7 +1191,7 @@
     "Bike_Rack_ID": "0189-2",
     "Latitude": 37.2247553,
     "Longitude": -80.420692,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Dietrick Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/306/attachments/242"
@@ -1200,7 +1200,7 @@
     "Bike_Rack_ID": "0189-1",
     "Latitude": 37.2246901,
     "Longitude": -80.4206216,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Dietrick Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/287/attachments/199"
@@ -1209,7 +1209,7 @@
     "Bike_Rack_ID": "0189-4",
     "Latitude": 37.2242464,
     "Longitude": -80.4214705,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Dietrick Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/375/attachments/308"
@@ -1218,7 +1218,7 @@
     "Bike_Rack_ID": "0189-5",
     "Latitude": 37.2242256,
     "Longitude": -80.4214463,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Dietrick Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/312/attachments/235"
@@ -1227,7 +1227,7 @@
     "Bike_Rack_ID": "0189-6",
     "Latitude": 37.2241887,
     "Longitude": -80.4214135,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Dietrick Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/295/attachments/207"
@@ -1533,7 +1533,7 @@
     "Bike_Rack_ID": "0038-6",
     "Latitude": 37.222868,
     "Longitude": -80.42206,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Cochrane Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/373/attachments/305"
@@ -1542,7 +1542,7 @@
     "Bike_Rack_ID": "0038-7",
     "Latitude": 37.222915,
     "Longitude": -80.422075,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 12,
     "Nearest_Building_Name": "Cochrane Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/363/attachments/298"
@@ -1677,7 +1677,7 @@
     "Bike_Rack_ID": "0112-4",
     "Latitude": 37.223814,
     "Longitude": -80.422361,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 14,
     "Nearest_Building_Name": "Cheatham Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/357/attachments/292"
@@ -1686,7 +1686,7 @@
     "Bike_Rack_ID": "0112-3",
     "Latitude": 37.22382,
     "Longitude": -80.42231,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 14,
     "Nearest_Building_Name": "Cheatham Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/350/attachments/282"
@@ -1704,7 +1704,7 @@
     "Bike_Rack_ID": "0112-2",
     "Latitude": 37.224108,
     "Longitude": -80.422458,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 14,
     "Nearest_Building_Name": "Cheatham Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/264/attachments/222"
@@ -1713,7 +1713,7 @@
     "Bike_Rack_ID": "0112-1",
     "Latitude": 37.224036,
     "Longitude": -80.42271,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 14,
     "Nearest_Building_Name": "Cheatham Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/265/attachments/223"
@@ -1722,7 +1722,7 @@
     "Bike_Rack_ID": "0111-1",
     "Latitude": 37.223871,
     "Longitude": -80.423378,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 14,
     "Nearest_Building_Name": "Fralin Biotechnology Center",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/319/attachments/251"
@@ -2037,7 +2037,7 @@
     "Bike_Rack_ID": "0140-1",
     "Latitude": 37.218008,
     "Longitude": -80.428239,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Vet Med",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/420/attachments/348"
@@ -2145,7 +2145,7 @@
     "Bike_Rack_ID": "0118-3",
     "Latitude": 37.221738,
     "Longitude": -80.423622,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 14,
     "Nearest_Building_Name": "Litton-Reaves Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/395/attachments/315"
@@ -2154,7 +2154,7 @@
     "Bike_Rack_ID": "0118-2",
     "Latitude": 37.221725,
     "Longitude": -80.423643,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Litton-Reaves Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/409/attachments/337"
@@ -2163,7 +2163,7 @@
     "Bike_Rack_ID": "0118-4",
     "Latitude": 37.221744,
     "Longitude": -80.423649,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Litton-Reaves Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/404/attachments/334"
@@ -2280,7 +2280,7 @@
     "Bike_Rack_ID": "0037-2",
     "Latitude": 37.226236,
     "Longitude": -80.421753,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Campbell Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/302/attachments/238"
@@ -2667,7 +2667,7 @@
     "Bike_Rack_ID": "0155-1",
     "Latitude": 37.228932,
     "Longitude": -80.426156,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 6,
     "Nearest_Building_Name": "Derring Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/63/attachments/51 "
@@ -2676,7 +2676,7 @@
     "Bike_Rack_ID": "0155-2",
     "Latitude": 37.22909,
     "Longitude": -80.425948,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 12,
     "Nearest_Building_Name": "Derring Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/57/attachments/43 "
@@ -2685,7 +2685,7 @@
     "Bike_Rack_ID": "0155-3",
     "Latitude": 37.229226,
     "Longitude": -80.425779,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 10,
     "Nearest_Building_Name": "Derring Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/56/attachments/42 "
@@ -2694,7 +2694,7 @@
     "Bike_Rack_ID": "0155-4",
     "Latitude": 37.229346,
     "Longitude": -80.425628,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 12,
     "Nearest_Building_Name": "Derring Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/55/attachments/41 "
@@ -2703,7 +2703,7 @@
     "Bike_Rack_ID": "0155-5",
     "Latitude": 37.229466,
     "Longitude": -80.425456,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 12,
     "Nearest_Building_Name": "Derring Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/53/attachments/38 "
@@ -2712,7 +2712,7 @@
     "Bike_Rack_ID": "0155-6",
     "Latitude": 37.228917,
     "Longitude": -80.425538,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 8,
     "Nearest_Building_Name": "Derring Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/62/attachments/50 "
@@ -2874,7 +2874,7 @@
     "Bike_Rack_ID": "0172-3",
     "Latitude": 37.22986,
     "Longitude": -80.425061,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 21,
     "Nearest_Building_Name": "Cowgill Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/54/attachments/39 "
@@ -2973,7 +2973,7 @@
     "Bike_Rack_ID": "0133-1",
     "Latitude": 37.231232,
     "Longitude": -80.423414,
-    "Covered?": "Yes(Overhang)",
+    "Covered?": "Yes",
     "Capacity": 12,
     "Nearest_Building_Name": "Randolph Hall",
     "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/95/attachments/68 "
