@@ -1,0 +1,299 @@
+[
+  {
+    "Bike_Rack_ID": "0174-8",
+    "Latitude": 37.230281,
+    "Longitude": -80.420711,
+    "Covered?": "No",
+    "Capacity": 8,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/154/attachments/122 "
+  },
+  {
+    "Bike_Rack_ID": "0174-7",
+    "Latitude": 37.230166,
+    "Longitude": -80.420813,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/168/attachments/111 "
+  },
+  {
+    "Bike_Rack_ID": "0174-6",
+    "Latitude": 37.230081,
+    "Longitude": -80.420816,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/169/attachments/121 "
+  },
+  {
+    "Bike_Rack_ID": "0174-5",
+    "Latitude": 37.229836,
+    "Longitude": -80.420805,
+    "Covered?": "No",
+    "Capacity": 24,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/176/attachments/119 "
+  },
+  {
+    "Bike_Rack_ID": "0174-4",
+    "Latitude": 37.229625,
+    "Longitude": -80.420606,
+    "Covered?": "No",
+    "Capacity": 12,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/177/attachments/120 "
+  },
+  {
+    "Bike_Rack_ID": "0174-10",
+    "Latitude": 37.229467,
+    "Longitude": -80.420376,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/156/attachments/125 "
+  },
+  {
+    "Bike_Rack_ID": "0174-3",
+    "Latitude": 37.229432,
+    "Longitude": -80.420334,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/156/attachments/125 "
+  },
+  {
+    "Bike_Rack_ID": "0174-9",
+    "Latitude": 37.229386,
+    "Longitude": -80.420298,
+    "Covered?": "No",
+    "Capacity": 10,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/156/attachments/125 "
+  },
+  {
+    "Bike_Rack_ID": "0003-3",
+    "Latitude": 37.230213,
+    "Longitude": -80.420285,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Pearson Hall West",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/172/attachments/131 "
+  },
+  {
+    "Bike_Rack_ID": "0003-1",
+    "Latitude": 37.230168,
+    "Longitude": -80.420233,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Pearson Hall West",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/172/attachments/131 "
+  },
+  {
+    "Bike_Rack_ID": "0003-2",
+    "Latitude": 37.230013,
+    "Longitude": -80.420131,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Pearson Hall West",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/182/attachments/136 "
+  },
+  {
+    "Bike_Rack_ID": "0174-2",
+    "Latitude": 37.229425,
+    "Longitude": -80.420038,
+    "Covered?": "No",
+    "Capacity": 12,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/161/attachments/123 "
+  },
+  {
+    "Bike_Rack_ID": "0174-1",
+    "Latitude": 37.229572,
+    "Longitude": -80.419691,
+    "Covered?": "No",
+    "Capacity": 12,
+    "Nearest_Building_Name": "Torgersen Hall",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/175/attachments/118 "
+  },
+  {
+    "Bike_Rack_ID": "0188-1",
+    "Latitude": 37.232055,
+    "Longitude": -80.418838,
+    "Covered?": "No",
+    "Capacity": 12,
+    "Nearest_Building_Name": "Moss Arts Center",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/183/attachments/129 "
+  },
+  {
+    "Bike_Rack_ID": "0188-2",
+    "Latitude": 37.231779,
+    "Longitude": -80.418827,
+    "Covered?": "No",
+    "Capacity": 8,
+    "Nearest_Building_Name": "Moss Arts Center",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/179/attachments/132"
+  },
+  {
+    "Bike_Rack_ID": "0002-1",
+    "Latitude": 37.231238,
+    "Longitude": -80.418945,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Pearson Hall East",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/185/attachments/135 "
+  },
+  {
+    "Bike_Rack_ID": "0002-3",
+    "Latitude": 37.231194,
+    "Longitude": -80.418901,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Pearson Hall East",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/185/attachments/135 "
+  },
+  {
+    "Bike_Rack_ID": "0002-2",
+    "Latitude": 37.231203,
+    "Longitude": -80.418754,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Pearson Hall East",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/153/attachments/126 "
+  },
+  {
+    "Bike_Rack_ID": "0002-4",
+    "Latitude": 37.231174,
+    "Longitude": -80.418722,
+    "Covered?": "No",
+    "Capacity": 14,
+    "Nearest_Building_Name": "Pearson Hall East",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/153/attachments/126 "
+  },
+  {
+    "Bike_Rack_ID": "0188-3",
+    "Latitude": 37.231297,
+    "Longitude": -80.418211,
+    "Covered?": "No",
+    "Capacity": 10,
+    "Nearest_Building_Name": "Moss Arts Center",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/186/attachments/127 "
+  },
+  {
+    "Bike_Rack_ID": "0063-1",
+    "Latitude": 37.227457,
+    "Longitude": -80.438363,
+    "Covered?": "No",
+    "Capacity": 12,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/452/attachments/381 "
+  },
+  {
+    "Bike_Rack_ID": "0065-1",
+    "Latitude": 37.226433,
+    "Longitude": -80.438379,
+    "Covered?": "No",
+    "Capacity": 10,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/451/attachments/380 "
+  },
+  {
+    "Bike_Rack_ID": "0077-1",
+    "Latitude": 37.225625,
+    "Longitude": -80.438905,
+    "Covered?": "No",
+    "Capacity": 16,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/438/attachments/367 "
+  },
+  {
+    "Bike_Rack_ID": "0077-2",
+    "Latitude": 37.225489,
+    "Longitude": -80.438986,
+    "Covered?": "No",
+    "Capacity": 16,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/430/attachments/359 "
+  },
+  {
+    "Bike_Rack_ID": "0076-1",
+    "Latitude": 37.225113,
+    "Longitude": -80.439452,
+    "Covered?": "No",
+    "Capacity": 16,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/432/attachments/361 "
+  },
+  {
+    "Bike_Rack_ID": "0076-2",
+    "Latitude": 37.22475,
+    "Longitude": -80.439479,
+    "Covered?": "No",
+    "Capacity": 16,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/435/attachments/363 "
+  },
+  {
+    "Bike_Rack_ID": "0075-1",
+    "Latitude": 37.224042,
+    "Longitude": -80.439071,
+    "Covered?": "No",
+    "Capacity": 16,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/436/attachments/364 "
+  },
+  {
+    "Bike_Rack_ID": "0075-2",
+    "Latitude": 37.223829,
+    "Longitude": -80.438701,
+    "Covered?": "No",
+    "Capacity": 16,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": " https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/437/attachments/365 "
+  },
+  {
+    "Bike_Rack_ID": "0074-1",
+    "Latitude": 37.223816,
+    "Longitude": -80.437999,
+    "Covered?": "No",
+    "Capacity": 16,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/439/attachments/368"
+  },
+  {
+    "Bike_Rack_ID": "0074-2",
+    "Latitude": 37.223765,
+    "Longitude": -80.437827,
+    "Covered?": "No",
+    "Capacity": 16,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/431/attachments/360 "
+  },
+  {
+    "Bike_Rack_ID": "0068-1",
+    "Latitude": 37.224499,
+    "Longitude": -80.437049,
+    "Covered?": "No",
+    "Capacity": 10,
+    "Nearest_Building_Name": "Special Purpose Housing",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/433/attachments/362 "
+  },
+  {
+    "Bike_Rack_ID": "0078-2",
+    "Latitude": 37.2251,
+    "Longitude": -80.436097,
+    "Covered?": "No",
+    "Capacity": 10,
+    "Nearest_Building_Name": "Thomas E Cook Counseling Center",
+    "ImageURL": " https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/447/attachments/375 "
+  },
+  {
+    "Bike_Rack_ID": "0390-1",
+    "Latitude": 37.224604,
+    "Longitude": -80.429102,
+    "Covered?": "No",
+    "Capacity": 10,
+    "Nearest_Building_Name": "Duck Pond Gazebo",
+    "ImageURL": "https://arcgis-central.gis.vt.edu/arcgis/rest/services/vtcampusmap/AlternateTransportation/MapServer/1/459/attachments/345 "
+  }
+ ]

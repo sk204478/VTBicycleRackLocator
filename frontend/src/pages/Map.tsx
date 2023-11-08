@@ -2,10 +2,11 @@ import { useState, useCallback, useRef } from 'react';
 import { GoogleMap, Marker, OverlayViewF, useLoadScript, DirectionsRenderer } from '@react-google-maps/api';
 import { Grid, Box, Paper }  from '@mui/material';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
-import data from '../datas/bicycle_rack_coordinates_data.json';
 import InfoCard from '../component/InfoCard';
 import ReactDOM from 'react-dom';
 import ControlPanel from '../component/ControlPanel';
+import useRackData from '../component/useRackData';
+
 
 // Create an icon object with the path
 const ModeStandbyIcon = {
@@ -37,6 +38,8 @@ function Map() {
   const [selectedBuildings, setSelectedBuildings] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState(null);
   const mapRef = useRef<google.maps.Map | null>(null);
+  const {data: rackData, loading, error} = useRackData();
+  
 
   const handleBuildingSelect = (event, newValue) => {
     setSelectedBuildings(newValue);
@@ -91,8 +94,6 @@ function Map() {
     }
   };
 
-  
-  
   const handleMapLoad = useCallback((map) => {
     mapRef.current = map; // Store the map instance when the map is loaded
     const centerControlDiv = document.createElement('div');
@@ -134,8 +135,6 @@ function Map() {
     language: 'EN'
   });
 
-  
-
   // Function to handle marker click
   const handleMarkerClick = (location, event) => {
     event.stop();
@@ -150,6 +149,9 @@ function Map() {
   if (loadError) return <div>Error loading maps</div>;
   if (!isLoaded) return <div>Loading...</div>;
 
+  if (loading) return <p>Loading Bicycle rack data...</p>;
+  if (error) return <p>Error on Rack data: {error.message}</p>;
+
   return (
     <Grid container spacing={1} >
         <Grid item xs={12} md={9} lg={9}>
@@ -162,7 +164,7 @@ function Map() {
                 onClick={handleClose}
                 onLoad={handleMapLoad}
               >
-                {data.map((location, index) => {
+                {rackData.map((location, index) => {
                   // If we are showing covered only and this marker is not covered, don't render it
                   if (showCoveredOnly && location['Covered?'] !== "Yes") {
                     return null;

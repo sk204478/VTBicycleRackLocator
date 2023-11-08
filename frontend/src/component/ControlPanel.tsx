@@ -1,5 +1,5 @@
 import { Grid, Box, Switch, Button, Stack, Autocomplete, List, ListItemButton, ListItemIcon, ListItemText, ListSubheader, Divider, Collapse, TextField} from '@mui/material';
-import  ModeStandbyIcon from '@mui/icons-material/ModeStandby';
+import ModeStandbyIcon from '@mui/icons-material/ModeStandby';
 import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import BuildIcon from '@mui/icons-material/Build';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
@@ -7,12 +7,14 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-import BuildingNames from '../datas/buildings.json';
+//import BuildingNames from '../datas/buildings.json';
+import useBuildingData from './useBuildingData';
 
 import { useState } from 'react';
 
 function NestedList({ origin, destination, setDelete, onRequestDirections, onToggleCovered, onToggleNearTo, offToggleNearTo }) {
   const [open, setOpen] = useState(false);
+  const {data: BuildingNames, loading, error} = useBuildingData();
   const handleClick = () => {
     const newOpenState = !open;
     setOpen(newOpenState);
@@ -33,6 +35,8 @@ function NestedList({ origin, destination, setDelete, onRequestDirections, onTog
     }
   };
 
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
 
   return (
     <Grid item xs={3} style={{ display: 'flex', flexDirection: 'column', height: '100%', width: '100%', maxWidth: '360px'}}>
