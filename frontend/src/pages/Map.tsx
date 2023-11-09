@@ -7,7 +7,6 @@ import ReactDOM from 'react-dom';
 import ControlPanel from '../component/ControlPanel';
 import useRackData from '../component/useRackData';
 
-
 // Create an icon object with the path
 const ModeStandbyIcon = {
   path: "M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z",
@@ -23,6 +22,7 @@ const mapStyles = {
   width: '100%',
 };
 
+// Set default center
 const defaultCenter = {
   lat: 37.228366,
   lng: -80.421728,
@@ -30,7 +30,6 @@ const defaultCenter = {
 
 function Map() {
 
-  // 
   const [origin, setOrigin] = useState(null);
   const [destination, setDestination] = useState(null);
   const [directionsResponse, setDirectionsResponse] = useState(null);
@@ -40,67 +39,7 @@ function Map() {
   const mapRef = useRef<google.maps.Map | null>(null);
   const { data: rackData, loading, error } = useRackData();
 
-
-  const handleBuildingSelect = (event, newValue) => {
-    setSelectedBuildings(newValue);
-  };
-
-  const handleBuildingUnselect = () => {
-    setSelectedBuildings([]);
-  }
-
-  const requestDirections = (origin, destination) => {
-    if (!origin || !destination) return;
-
-    const directionsService = new google.maps.DirectionsService();
-    directionsService.route(
-      {
-        origin: new google.maps.LatLng(origin.lat, origin.lng),
-        destination: new google.maps.LatLng(destination.lat, destination.lng),
-        travelMode: google.maps.TravelMode.BICYCLING,
-      },
-      (result, status) => {
-        if (status === google.maps.DirectionsStatus.OK) {
-          setDirectionsResponse(result);
-        } else {
-          console.error(`error fetching directions ${result}`);
-        }
-      }
-    );
-  };
-
-  const handleRequestDirections = () => {
-    if (origin && destination) {
-      requestDirections(origin, destination);
-      setSelectedLocation(null);
-    }
-  };
-
-  const handleSetOrigin = (location) => {
-    setOrigin({ lat: location.Latitude, lng: location.Longitude });
-  };
-  const handleSetDestination = (location) => {
-    setDestination({ lat: location.Latitude, lng: location.Longitude });
-  };
-  const handleDeleteBoth = () => {
-    setDirectionsResponse(null);
-    setOrigin(null);
-    setDestination(null);
-
-    if (mapRef.current) {
-      mapRef.current.panTo(defaultCenter);
-      mapRef.current.setZoom(16);
-      setSelectedLocation(null);
-    }
-  };
-
-  const handleMapLoad = useCallback((map) => {
-    mapRef.current = map; // Store the map instance when the map is loaded
-    const centerControlDiv = document.createElement('div');
-    renderCenterControl(centerControlDiv, map);
-    map.controls[window.google.maps.ControlPosition.RIGHT_CENTER].push(centerControlDiv);
-  }, []);
-
+  // create custom control button on map that moves to default center and zoom level
   const renderCenterControl = (controlDiv, map) => {
     // Set up the control button UI
     controlDiv.style.backgroundColor = '#fff';
@@ -123,28 +62,87 @@ function Map() {
     });
   };
 
+
+  const handleBuildingSelect = (event, newValue) => {
+    setSelectedBuildings(newValue);
+  };
+  const handleBuildingUnselect = () => {
+    setSelectedBuildings([]);
+  }
+
+
+  const requestDirections = (origin, destination) => {
+    if (!origin || !destination) return;
+
+    const directionsService = new google.maps.DirectionsService();
+    directionsService.route(
+      {
+        origin: new google.maps.LatLng(origin.lat, origin.lng),
+        destination: new google.maps.LatLng(destination.lat, destination.lng),
+        travelMode: google.maps.TravelMode.BICYCLING,
+      },
+      (result, status) => {
+        if (status === google.maps.DirectionsStatus.OK) {
+          setDirectionsResponse(result);
+        } else {
+          console.error(`error fetching directions ${result}`);
+        }
+      }
+    );
+  };
+  const handleRequestDirections = () => {
+    if (origin && destination) {
+      requestDirections(origin, destination);
+      setSelectedLocation(null);
+    }
+  };
+  const handleSetOrigin = (location) => {
+    setOrigin({ lat: location.Latitude, lng: location.Longitude });
+  };
+  const handleSetDestination = (location) => {
+    setDestination({ lat: location.Latitude, lng: location.Longitude });
+  };
+  const handleDeleteBoth = () => {
+    setDirectionsResponse(null);
+    setOrigin(null);
+    setDestination(null);
+
+    if (mapRef.current) {
+      mapRef.current.panTo(defaultCenter);
+      mapRef.current.setZoom(16);
+      setSelectedLocation(null);
+    }
+  };
+
+
+  // set the position of InfoCard
   const getPixelPositionOffset = (width, height) => {
     return {
       x: 7,
       y: -(height) + 5,
     };
   };
+  // handle marker click event
+  const handleMarkerClick = (location, event) => {
+    event.stop();
+    setSelectedLocation(location);
+  };
+  // handle closing the InfoCard
+  const handleClose = () => {
+    setSelectedLocation(null);
+  };
+
+  const handleMapLoad = useCallback((map) => {
+    mapRef.current = map; // Store the map instance when the map is loaded
+    const centerControlDiv = document.createElement('div');
+    renderCenterControl(centerControlDiv, map);
+    map.controls[window.google.maps.ControlPosition.RIGHT_CENTER].push(centerControlDiv);
+  }, []);
 
   const { isLoaded, loadError } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY || '',
     language: 'EN'
   });
-
-  // Function to handle marker click
-  const handleMarkerClick = (location, event) => {
-    event.stop();
-    setSelectedLocation(location);
-  };
-
-  // Function to close the modal
-  const handleClose = () => {
-    setSelectedLocation(null);
-  };
 
   if (loadError) return <div>Error loading maps</div>;
   if (!isLoaded) return <div>Loading...</div>;
@@ -169,7 +167,6 @@ function Map() {
                 if (showCoveredOnly && location['Covered?'] !== "Yes") {
                   return null;
                 }
-
 
                 if (selectedBuildings.length > 0 && !selectedBuildings.some(building => location.Nearest_Building_Name === building.Buildings)) {
                   return null; // If not, do not render this marker

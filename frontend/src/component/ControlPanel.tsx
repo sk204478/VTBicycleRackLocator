@@ -12,9 +12,11 @@ import useBuildingData from './useBuildingData';
 
 import { useState } from 'react';
 
-function NestedList({ origin, destination, setDelete, onRequestDirections, onToggleCovered, onToggleNearTo, offToggleNearTo }) {
-  const [open, setOpen] = useState(false);
+function ControlPanel({ origin, destination, setDelete, onRequestDirections, onToggleCovered, onToggleNearTo, offToggleNearTo }) {
   const { data: BuildingNames, loading, error } = useBuildingData();
+  const [open, setOpen] = useState(false);
+  const [showNearTo, setShowNearTo] = useState(false);
+
   const handleClick = () => {
     const newOpenState = !open;
     setOpen(newOpenState);
@@ -24,8 +26,6 @@ function NestedList({ origin, destination, setDelete, onRequestDirections, onTog
       offToggleNearTo();
     }
   };
-
-  const [showNearTo, setShowNearTo] = useState(false);
 
   const handleToggleShowNearTo = (event) => {
     setShowNearTo(event.target.checked);
@@ -175,4 +175,4 @@ function NestedList({ origin, destination, setDelete, onRequestDirections, onTog
   );
 }
 
-export default NestedList;
+export default ControlPanel;
