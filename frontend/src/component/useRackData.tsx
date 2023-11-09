@@ -18,7 +18,7 @@ const useRackData = () => {
         setError(error);
         setLoading(false);
       });
-  }, [apiHost]); 
+  }, [apiHost]);
 
   return { data, loading, error };
 };

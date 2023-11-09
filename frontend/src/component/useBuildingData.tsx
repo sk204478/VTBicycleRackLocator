@@ -18,7 +18,7 @@ const useBuildingData = () => {
         setError(error);
         setLoading(false);
       });
-  }, [apiHost]); 
+  }, [apiHost]);
 
   return { data, loading, error };
 };

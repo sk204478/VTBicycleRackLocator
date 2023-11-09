@@ -1,6 +1,6 @@
 import { useState, useCallback, useRef } from 'react';
 import { GoogleMap, Marker, OverlayViewF, useLoadScript, DirectionsRenderer } from '@react-google-maps/api';
-import { Grid, Box, Paper }  from '@mui/material';
+import { Grid, Box, Paper } from '@mui/material';
 import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import InfoCard from '../component/InfoCard';
 import ReactDOM from 'react-dom';
@@ -11,11 +11,11 @@ import useRackData from '../component/useRackData';
 // Create an icon object with the path
 const ModeStandbyIcon = {
   path: "M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10 10-4.49 10-10S17.51 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-8c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z",
-  fillColor: '#630031', // Set the fill color for your icon
-  fillOpacity: 1,    // Adjust opacity as needed
-  scale: 0.5,        // Scale your icon down, SVG paths can be large
+  fillColor: '#630031',
+  fillOpacity: 1,
+  scale: 0.5,
   strokeColor: '#630031',
-  strokeWeight: 0.5, // Adjust stroke weight as needed
+  strokeWeight: 0.5,
 };
 
 const mapStyles = {
@@ -38,12 +38,12 @@ function Map() {
   const [selectedBuildings, setSelectedBuildings] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState(null);
   const mapRef = useRef<google.maps.Map | null>(null);
-  const {data: rackData, loading, error} = useRackData();
-  
+  const { data: rackData, loading, error } = useRackData();
+
 
   const handleBuildingSelect = (event, newValue) => {
     setSelectedBuildings(newValue);
-  };  
+  };
 
   const handleBuildingUnselect = () => {
     setSelectedBuildings([]);
@@ -126,7 +126,7 @@ function Map() {
   const getPixelPositionOffset = (width, height) => {
     return {
       x: 7,
-      y: -(height)+5,
+      y: -(height) + 5,
     };
   };
 
@@ -154,84 +154,84 @@ function Map() {
 
   return (
     <Grid container spacing={1} >
-        <Grid item xs={12} md={9} lg={9}>
-          <Paper elevation={4}>
-            <Box height={710} width="100%" >
-              <GoogleMap
-                mapContainerStyle={mapStyles}
-                zoom={16}
-                center={defaultCenter}
-                onClick={handleClose}
-                onLoad={handleMapLoad}
-              >
-                {rackData.map((location, index) => {
-                  // If we are showing covered only and this marker is not covered, don't render it
-                  if (showCoveredOnly && location['Covered?'] !== "Yes") {
-                    return null;
-                  }
-                  
+      <Grid item xs={12} md={9} lg={9}>
+        <Paper elevation={4}>
+          <Box height={710} width="100%" >
+            <GoogleMap
+              mapContainerStyle={mapStyles}
+              zoom={16}
+              center={defaultCenter}
+              onClick={handleClose}
+              onLoad={handleMapLoad}
+            >
+              {rackData.map((location, index) => {
+                // If we are showing covered only and this marker is not covered, don't render it
+                if (showCoveredOnly && location['Covered?'] !== "Yes") {
+                  return null;
+                }
 
-                  if (selectedBuildings.length > 0 && !selectedBuildings.some(building => location.Nearest_Building_Name === building.Buildings)) {
-                    return null; // If not, do not render this marker
-                  }
 
-                  // Otherwise, render the Marker as usual
-                  return (
-                    <Marker
-                      key={index}
-                      icon={ModeStandbyIcon}
-                      position={{ lat: location.Latitude, lng: location.Longitude }}
-                      onClick={(event) => handleMarkerClick(location, event)}
-                    />
-                  );
-                })}
-                {selectedLocation && (
-                  <OverlayViewF
-                    mapPaneName={'floatPane'}
-                    getPixelPositionOffset={getPixelPositionOffset}
-                    position={{ lat: selectedLocation.Latitude, lng: selectedLocation.Longitude }}
-                  >
-                    <div 
-                      style={{ background: "white", position: "relative", width: '200px'}}
-                      onClick={(event) => event.stopPropagation()}
-                    >
-                      <InfoCard
-                        bikeRackId={selectedLocation['Bike_Rack_ID']}
-                        covered={selectedLocation['Covered?']}
-                        capacity={selectedLocation['Capacity']}
-                        latitude={selectedLocation['Latitude']}
-                        longitude={selectedLocation['Longitude']}
-                        imgURL={selectedLocation['ImageURL']}
-                        onSetOrigin={handleSetOrigin} // Pass the handler
-                        onSetDestination={handleSetDestination} // Pass the handler
-                      />
-                    </div>
-                  </OverlayViewF>
-                )}
-                {directionsResponse && (
-                  <DirectionsRenderer
-                    options={{ 
-                      directions: directionsResponse
-                    }}
+                if (selectedBuildings.length > 0 && !selectedBuildings.some(building => location.Nearest_Building_Name === building.Buildings)) {
+                  return null; // If not, do not render this marker
+                }
+
+                // Otherwise, render the Marker as usual
+                return (
+                  <Marker
+                    key={index}
+                    icon={ModeStandbyIcon}
+                    position={{ lat: location.Latitude, lng: location.Longitude }}
+                    onClick={(event) => handleMarkerClick(location, event)}
                   />
-                )}
-              </GoogleMap>
-            </Box>
-          </Paper>
-        </Grid>
-        <Grid item xs={12} md={3} lg={3}>
-          <Paper elevation={4} >
-            <ControlPanel 
-              origin={origin} 
-              destination={destination} 
-              setDelete={handleDeleteBoth} 
-              onRequestDirections={handleRequestDirections} 
-              onToggleCovered={setShowCoveredOnly} 
-              onToggleNearTo={handleBuildingSelect}
-              offToggleNearTo={handleBuildingUnselect}
-            />
-          </Paper>
-        </Grid>
+                );
+              })}
+              {selectedLocation && (
+                <OverlayViewF
+                  mapPaneName={'floatPane'}
+                  getPixelPositionOffset={getPixelPositionOffset}
+                  position={{ lat: selectedLocation.Latitude, lng: selectedLocation.Longitude }}
+                >
+                  <div
+                    style={{ background: "white", position: "relative", width: '200px' }}
+                    onClick={(event) => event.stopPropagation()}
+                  >
+                    <InfoCard
+                      bikeRackId={selectedLocation['Bike_Rack_ID']}
+                      covered={selectedLocation['Covered?']}
+                      capacity={selectedLocation['Capacity']}
+                      latitude={selectedLocation['Latitude']}
+                      longitude={selectedLocation['Longitude']}
+                      imgURL={selectedLocation['ImageURL']}
+                      onSetOrigin={handleSetOrigin} // Pass the handler
+                      onSetDestination={handleSetDestination} // Pass the handler
+                    />
+                  </div>
+                </OverlayViewF>
+              )}
+              {directionsResponse && (
+                <DirectionsRenderer
+                  options={{
+                    directions: directionsResponse
+                  }}
+                />
+              )}
+            </GoogleMap>
+          </Box>
+        </Paper>
+      </Grid>
+      <Grid item xs={12} md={3} lg={3}>
+        <Paper elevation={4} >
+          <ControlPanel
+            origin={origin}
+            destination={destination}
+            setDelete={handleDeleteBoth}
+            onRequestDirections={handleRequestDirections}
+            onToggleCovered={setShowCoveredOnly}
+            onToggleNearTo={handleBuildingSelect}
+            offToggleNearTo={handleBuildingUnselect}
+          />
+        </Paper>
+      </Grid>
     </Grid>
   );
 }

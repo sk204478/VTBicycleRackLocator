@@ -8,12 +8,12 @@ export default function InfoCard({ bikeRackId, covered, capacity, latitude, long
   const handleClose = () => setOpen(false);
 
   const rackImageUrl = imgURL === "n/a"
-  ? `https://cataas.com/cat?${new Date().getTime()}`
-  : imgURL;
+    ? `https://cataas.com/cat?${new Date().getTime()}`
+    : imgURL;
 
-  
-  
-    
+
+
+
   return (
     <>
       <Card sx={{ width: '100%' }}>
@@ -31,7 +31,7 @@ export default function InfoCard({ bikeRackId, covered, capacity, latitude, long
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Covered: {covered}
-                  <br />
+              <br />
               Capacity: {capacity}
             </Typography>
           </CardContent>
@@ -53,7 +53,7 @@ export default function InfoCard({ bikeRackId, covered, capacity, latitude, long
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
-        <Paper 
+        <Paper
           sx={{
             position: 'absolute',
             top: '50%',
@@ -64,10 +64,10 @@ export default function InfoCard({ bikeRackId, covered, capacity, latitude, long
             maxHeight: '80vh',
             overflow: 'hidden',
             p: 0,
-          }} 
-          elevation={4} 
+          }}
+          elevation={4}
         >
-          <img src={rackImageUrl} alt="Bicycle Rack" style={{ width: '100%', height: '100%', margin: 'auto', display: 'block'}} />
+          <img src={rackImageUrl} alt="Bicycle Rack" style={{ width: '100%', height: '100%', margin: 'auto', display: 'block' }} />
         </Paper>
       </Modal>
     </>

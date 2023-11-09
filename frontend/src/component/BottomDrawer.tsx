@@ -1,12 +1,9 @@
 import { useState, useRef } from 'react';
-import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import HomeSharpIcon from '@mui/icons-material/HomeSharp';
 import HelpSharpIcon from '@mui/icons-material/HelpSharp';
-import NavigationIcon from '@mui/icons-material/Navigation';
 import Popper from '@mui/material/Popper';
-import { Box, Chip, Fab }from '@mui/material';
-import Typography from '@mui/material/Typography';
+import { Box, Fab } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 function BottomIconDrawer() {
@@ -21,16 +18,16 @@ function BottomIconDrawer() {
   return (
     <div style={{ position: 'fixed', bottom: '10px', right: '10px' }}>
 
-      <Fab 
-        variant="extended" 
-        ref={anchorRef} 
-        size="small" 
-        color="secondary" 
+      <Fab
+        variant="extended"
+        ref={anchorRef}
+        size="small"
+        color="secondary"
         onClick={handleToggle}
-        sx={{padding:2}}
+        sx={{ padding: 2 }}
       >
         <MenuIcon sx={{ mr: 1 }} />
-        PAGES 
+        PAGES
       </Fab>
 
       <Popper open={open} anchorEl={anchorRef.current} placement="top-end">
@@ -41,9 +38,9 @@ function BottomIconDrawer() {
             flexDirection="column"
             alignItems="center"
           >
-            <Fab onClick={() => navigate('/')} size="medium" color="secondary" sx={{mb:0.5}}>
+            <Fab onClick={() => navigate('/')} size="medium" color="secondary" sx={{ mb: 0.5 }}>
               <HomeSharpIcon />
-              </Fab>
+            </Fab>
           </Box>
           <Box
             mb={0.2}
@@ -52,7 +49,7 @@ function BottomIconDrawer() {
             alignItems="center"
           >
             <Fab
-              onClick={() => navigate('/help')} size="medium" color="secondary" sx={{mb:0.5}}
+              onClick={() => navigate('/help')} size="medium" color="secondary" sx={{ mb: 0.5 }}
             >
               <HelpSharpIcon />
             </Fab>
@@ -64,7 +61,3 @@ function BottomIconDrawer() {
 }
 
 export default BottomIconDrawer;
-
-
-
-//<Typography variant="button" display="block">Home</Typography>
