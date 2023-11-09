@@ -1,10 +1,13 @@
 # VTBicycleRackLocator - MERN full stack
 
-[Edit in Codeflow ⚡️](https://stackblitz.com/~/github.com/sk204478/stackblitz-starters-vzqtwh)
-
 There will be an update for README soon...
 
-You need 2 .env filea for each backend and frontend directory.
+## Demo Video
+### click below thumbnail to redirect to youtube video link
+[![Watch the video](https://cdn.discordapp.com/attachments/335489602515238914/1171982810064617522/image.png)](https://youtu.be/tGxz1YhQksw?si=nFcCl-UGsyCowdjr)
+
+## Requirements
+You need 2 .env files for each backend and frontend directory.
 
 For backend .env
 ```
@@ -19,3 +22,10 @@ REACT_APP_API_HOST=http://localhost:3000 or whatever the host of your backend se
 ```
 
 For data, use the sample data on `fronend/datas/` if you just want to test frontend locally.
+These datas are public data.
+
+## Used tools
+Frontend : React typescript with MUI framework.\
+Backend : Node.js and Express\
+Database : MongoDB Atlas\
+Weather Component : [Weatherwidget](https://weatherwidget.io)
