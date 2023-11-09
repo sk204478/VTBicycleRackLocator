@@ -1,6 +1,7 @@
 # VTBicycleRackLocator - MERN full stack
 
 There will be an update for README soon...
+I accidentally exposed my API key so, I re-created it...
 
 ## Demo Video
 ### click below thumbnail to redirect to youtube video link
