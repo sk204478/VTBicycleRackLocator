@@ -47,7 +47,7 @@ npm run start
 ```
 
 ## Technologies Employed
-- **Frontend**: React typescript with MUI framework.\
-- **Backend**: Node.js and Express\
-- **Database**: MongoDB Atlas\
+- **Frontend**: React typescript with MUI framework.
+- **Backend**: Node.js and Express
+- **Database**: MongoDB Atlas
 - **Weather** Component : [Weatherwidget](https://weatherwidget.io)
