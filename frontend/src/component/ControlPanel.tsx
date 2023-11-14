@@ -7,7 +7,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
 import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
-//import BuildingNames from '../datas/buildings.json';
+//import useBuildingData from '../datas/buildings.json';
 import useBuildingData from './useBuildingData';
 
 import { useState } from 'react';

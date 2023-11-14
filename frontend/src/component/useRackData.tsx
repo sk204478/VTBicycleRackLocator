@@ -8,7 +8,7 @@ const useRackData = () => {
   const apiHost = process.env.REACT_APP_API_HOST || '';
 
   useEffect(() => {
-    fetch(`${apiHost}/racks`)
+    fetch(`${apiHost}/api/racks`)
       .then(response => response.json())
       .then(data => {
         setData(data);

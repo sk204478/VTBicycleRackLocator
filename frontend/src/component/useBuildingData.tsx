@@ -8,7 +8,7 @@ const useBuildingData = () => {
   const apiHost = process.env.REACT_APP_API_HOST || '';
 
   useEffect(() => {
-    fetch(`${apiHost}/buildings`)
+    fetch(`${apiHost}/api/buildings`)
       .then(response => response.json())
       .then(data => {
         setData(data);

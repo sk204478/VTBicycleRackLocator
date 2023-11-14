@@ -18,24 +18,23 @@ async function main() {
   try {
     await client.connect();
     console.log('Connected to database');
-    
+
     const racks_collection = client.db('RackLocator').collection('bicycle_racks');
     const buildings_collection = client.db('RackLocator').collection('buildings');
 
-    app.get('/racks', async (req, res) => {
+    app.get('/api/racks', async (req, res) => {
       const racks = await racks_collection.find({}).toArray();
       res.json(racks);
     });
 
-    app.get('/buildings', async (req, res) => {
-        const buildings = await buildings_collection.find({}).toArray();
-        res.json(buildings);
+    app.get('/api/buildings', async (req, res) => {
+      const buildings = await buildings_collection.find({}).toArray();
+      res.json(buildings);
     })
 
-    app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    app.get('/api', (req, res) => {
+      res.sendFile(path.join(__dirname, 'public', 'index.html'));
     });
-      
 
   } catch (e) {
     console.error(e);
